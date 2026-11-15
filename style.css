@@ -1,0 +1,206 @@
+
+/* General page styling */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #222222;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px 30px;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Navigation */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+nav a {
+    color: #222222;
+    text-decoration: none;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
+
+h1 {
+    font-size: 28px;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 40px;
+    margin-bottom: 16px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* Links */
+
+a {
+    color: #315c83;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Selected clips page */
+
+.clips {
+    margin-top: 35px;
+}
+
+.clip {
+    margin-bottom: 35px;
+}
+
+.clip h2 {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0 0 4px 0;
+}
+
+.clip h2 a {
+    color: #315c83;
+    text-decoration: none;
+}
+
+.clip h2 a:hover {
+    text-decoration: underline;
+}
+
+.clip-meta {
+    font-size: 14px;
+    color: #777777;
+    margin: 0 0 8px 0;
+}
+
+.clip-description {
+    margin: 0;
+}
+
+.other-work {
+    margin-top: 55px;
+    padding-top: 15px;
+    border-top: 1px solid #dddddd;
+}
+
+/* All work page */
+
+.outlet {
+    margin-top: 35px;
+}
+
+.outlet h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.work-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.work-list li {
+    margin-bottom: 12px;
+}
+
+.work-list span {
+    color: #777777;
+    font-size: 14px;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 100px;
+    font-size: 13px;
+    color: #777777;
+}
+
+/* Mobile layout */
+
+@media (max-width: 600px) {
+    body {
+        padding: 25px 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        margin-bottom: 55px;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+}
+
+/* Homepage introduction and photo */
+
+.intro {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.intro-text {
+    flex: 1;
+}
+
+.intro-text h1 {
+    margin-top: 0;
+}
+
+/* Stack photo above text on smaller screens */
+
+@media (max-width: 600px) {
+    .intro {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+    }
+}
